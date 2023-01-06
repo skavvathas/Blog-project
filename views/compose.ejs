@@ -1,0 +1,22 @@
+<%- include("partials/header") -%>
+    <h1>Compose</h1>
+    <form action="/compose" method="post">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="text" class="form-control" name="title" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Post</label>
+            <textarea class="form-control" name="post" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit" name="publish">Publish</button>
+
+
+    </form>
+
+    <div class="pick-color">
+        <label for="exampleColorInput" class="form-label">Color picker</label>
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+    </div>
+    <%- include("partials/footer") -%>
